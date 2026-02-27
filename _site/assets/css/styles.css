@@ -53,16 +53,25 @@ body{
 @media (max-width: 900px){ .grid2{grid-template-columns:1fr} .title{font-size:36px}}
 
 .profile{
-  display:flex;gap:18px;align-items:stretch;
-  border-radius:16px;overflow:hidden;
+  display:flex;
+  gap:18px;
+  align-items:flex-start;   /* importante */
+  border-radius:16px;
   border:2px solid var(--brand2);
 }
 
-.profile img{width:46%;
-  height:auto;
-  object-fit:contain;
-  display:block;}
-.profile .bio{padding:16px}
+.profile img{
+  width:250px;      /* tamaño fijo */
+  height:250px;     /* tamaño fijo */
+  object-fit:cover; /* mantiene proporción sin deformar */
+  flex-shrink:0;    /* evita que flex la reduzca */
+  display:block;
+}
+
+.profile .bio{
+  padding:16px;
+  flex:1;
+}
 
 .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 
