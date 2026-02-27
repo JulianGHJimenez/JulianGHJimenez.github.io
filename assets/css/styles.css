@@ -58,7 +58,7 @@ body{
   border:2px solid var(--brand2);
 }
 
-.profile img{width:46%;object-fit:cover;display:block}
+.profile img{width:auto;height:auto;object-fit:cover;display:block}
 .profile .bio{padding:16px}
 
 .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
